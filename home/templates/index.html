@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description">
+    <meta name="keywords" content="your, keywords, here">
+    <meta name="author" content="Your Name">
+
+    <!-- Favicon link (replace 'favicon.ico' with your own favicon file) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Your Page Title</title>
+
+    <!-- External CSS stylesheets or internal styles go here -->
+    <!-- Example: <link rel="stylesheet" href="styles.css"> -->
+
+    <!-- External JavaScript files go here -->
+    <!-- Example: <script src="script.js"></script> -->
+   <style>
+    /* Add your custom styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding: 0vw 5vw;
+    margin-top: 25px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #495057;
+  }
+
+.table {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-right: 10px;
+    padding: 11px 20px;
+}
+
+.end{
+    display: flex;
+    justify-content: space-between;
+}
+
+.end a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.end a:hover{
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #00468e;
+}
+
+.mid {
+    text-align: center;
+    margin-top: 15px;
+    display: flex;    
+    width: 100%;
+    height: 345px;
+    margin-bottom: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid img{
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mid a {
+    display: inline-block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.mid a:hover {
+    background-color: #0056b3;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    padding: 1vw;
+    justify-content: space-between;
+}
+
+.nav h2{
+    color: #007bff;
+}
+.nav h2 span{
+    color: crimson;
+}
+.links button{
+    padding: 12px 20px;
+    background: #007bff;
+    border: none;
+    outline: none;
+    border-radius: 1vw;
+}
+
+.links button:hover{
+    background: #00468e;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1vw;
+}
+
+/* Add more styles as needed */
+
+/* Optional: Add styles for responsive design */
+@media (max-width: 768px) {
+    /* Add responsive styles here */
+}
+
+   </style>
+</head>
+<body>
+
+    <div class = "container">        
+        <h1>Office Employee Management System</h1>
+        <hr>
+        
+        <div class="nav">
+            <h2>Hello, <span>{{ user.username }}!</span> </h2>
+            
+        <div class="links">
+            <button type="submit" class="btn"><a href="/sign/">SignUp</a></button>
+            <button type="submit" onclick="openPopup()" class="btn"><a href="/login/">Login</a></button>    
+        </div>    
+
+        </div>
+
+        <div class="mid">
+            <img src="https://www.reactjsindia.com/blog/wp-content/uploads/2023/11/Employee-Management-affilate-page-1536x1038-1.png" alt="">
+            <!-- <a href="/viewEmp">Get Started</a> -->
+        </div>
+
+        <div class="end">
+        <a class="btn btn-primary" href="/viewEmp" role="button">View All Employee</a>
+        <a class="btn btn-primary" href="/AddEmp" role="button">Add An Employee</a>
+        <a class="btn btn-primary" href="/RemoveEmp" role="button">Remove An Employee</a>
+        <a class="btn btn-primary" href="/FillterApp" role="button">Fillter Employee Details</a>
+        </div>
+
+    </div>
+
+    <!-- Your content goes here -->
+
+    <!-- External JavaScript libraries (optional) -->
+    <!-- Example: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+</body>
+</html>
